@@ -1,0 +1,156 @@
+/* writing media queries */
+
+/* smartphones: alters screen sizes between 0 and 480 */
+@media screen and (min-width: 0px)
+{
+	h2
+	{
+		font-size: 1.2em;
+	}
+
+	.project-icon
+	{
+	height: 8em;
+	width: 8em;	
+	margin-left: .5em;
+	border-radius: 10%;
+	box-shadow: 10px 10px 5px #888888;
+	
+	}
+
+	#first	
+	{
+		margin-top: 15px;
+		border-radius: 10%;
+		box-shadow: 10px 10px 5px #888888;
+	}
+}
+
+/* smartphones in landscape mode; alters screen sizes between 480 and 660 */
+@media screen and (min-width: 480px)
+{
+	/* * * * * * * * * * * * * * * * * * * * * * 
+	TWO COLUMN LAYOUT
+	* * * * * * * * * * * * * * * * * * * * * */
+
+	#primary 
+	{
+		width: 50%; /* will take up half of the screen */
+		float: left;
+	}
+
+	#secondary
+	{
+		width: 40%;
+		float: right;
+	}
+
+	#first
+	{
+		width: 30%; /* will take up half of the screen */
+		float: left;
+	}
+
+	#second
+	{
+		width: 70%;
+		float: right;
+	}
+
+
+	.project-icon
+	{
+	height: 12em;
+	width: 12em;	
+	margin-left: .5em;
+	border-radius: 10%;
+	box-shadow: 10px 10px 5px #888888;
+	
+	}
+
+	/* * * * * * * * * * * * * * * * * * * * * * 
+	How to know how big to make pictures for three colum layout
+	3 colums * 5 margins (2.5 per side)
+	100% - 15% = 85/3 = 28.3333333333
+	* * * * * * * * * * * * * * * * * * * * * */
+
+
+
+	/* * * * * * * * * * * * * * * * * * * * * * 
+	PAGE: EDUCATION
+	* * * * * * * * * * * * * * * * * * * * * */
+
+	#gallery li
+	{
+		width: 28.3333%;
+	}
+
+	#gallery li:nth-child(4n) /* left child psedo-class; selects the fourth list item in the gallery element */
+	{
+		clear: left;
+	}
+
+	
+
+
+	/* * * * * * * * * * * * * * * * * * * * * * 
+	PAGE: ABOUT
+	* * * * * * * * * * * * * * * * * * * * * */
+	.profile-photo
+	{
+		float: left;
+		margin: 0 5% 80px 0; /* 5% margin will seperate text */
+	}
+}
+
+/* large tablets and normal size desktops; alters screen sizes larger than 660px */
+@media screen and (min-width: 660px)
+{
+
+	/* * * * * * * * * * * * * * * * * * * * * * 
+	PAGE: HEADER
+	* * * * * * * * * * * * * * * * * * * * * */
+
+	nav
+	{
+		background: none; /* lets text sit against the header background */
+		float: right;
+		font-size: 1.125em;
+		margin-right: 5%;
+		margin-top: 2.5%; 
+		text-align: right;
+		width: 45%;
+	}
+
+	#logo	
+	{
+		float: left;
+		margin-left: 5%;
+		text-align: left;
+		width: 45%;
+	}
+
+	h1	
+	{
+		font-size: 2.5em;
+	}
+
+	h2
+	{
+		font-size: 1.1em;
+		margin-bottom: 20px;
+	}
+
+	header
+	{
+		border-bottom: 5px solid #3D3D3D; /* 5px is the width of the border */
+		margin-bottom: 60px;
+
+
+	}
+
+	/* * * * * * * * * * * * * * * * * * * * * * 
+	PAGE: EDUCATION
+	* * * * * * * * * * * * * * * * * * * * * */
+	
+}

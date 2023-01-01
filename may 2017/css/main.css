@@ -1,0 +1,275 @@
+/* * * * * * * * * * * * * * * * * * * * * * 
+GENERAL
+* * * * * * * * * * * * * * * * * * * * * */
+
+/* font-family: 'Megrim', cursive;
+	/* font-family: 'Fredericka the Great', cursive;
+	/* font-family: 'Nixie One', cursive; 
+	/* font-family: 'Poiret One', cursive;	
+	/* font-family: 'Comfortaa', cursive;
+	/* font-family: 'Changa One', sans-serif; */ /* san-serif is the backup font that will be used if Changa One is no longer available */
+body
+{
+	font-family: 'Open Sans', sans-serif;
+}
+
+#wrapper
+{
+	max-width: 940px; 
+	margin: 0 auto; /* 0 refers to top and bottom margin; auto refers to right and left margin */
+	padding: 0 5%; /* 0 refers to top and bottom padding; 5% refers to left and right padding adjusts according the the width of the browser */
+}
+
+a
+{
+	text-decoration: none;
+}
+
+img
+{
+	max-width: 100%; /* help with responsive design */
+}
+
+h3
+{
+	margin: 0 0 1em 0; /* affs a padding to the bottom of h3 elements */
+
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * 
+HEADING
+* * * * * * * * * * * * * * * * * * * * * */
+
+header
+{
+	float: left; /* helps with desktop view */
+	margin: 0 0 30px 0; /* top right bottom left (clockwise); removes weird white bar on top of header */
+	padding: 5px 0 0 0;
+	width: 100%; /* fill the page */
+}
+
+#logo 
+{
+	text-align: center; 
+	margin: 0; /* margin of 0 for all four sides */
+}
+
+h1
+{
+	font-family: 'Megrim', cursive; /* san-serif is the backup font that will be used if Changa One is no longer available */
+	margin: 15px 0;
+	font-size: 1.75em; /* ems are a relative unit of measurement; names after the letter "m"; 1 em is equal to the current font size which is normally 16 px */
+	font-weight: normal; /* headline elements are bold by default */
+	line-height: 0.8em; /* determines the amount of space between each line of text; more aparent in paragraphs of text */
+}
+
+h2
+{
+	font-family: 'Lato', cursive;
+	margin-top: -5px; /* -5 is top (makes elements tighter together, 0 is right and left, 0 is bottom */
+	font-weight: normal;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * 
+NAVIGATION
+* * * * * * * * * * * * * * * * * * * * * */
+
+nav
+{
+	text-align: center;
+	padding: 10px 0 0 0;
+	margin-top: 20px;
+}
+
+nav ul 
+{
+	list-style: none; /* no bullet points */
+	margin: 0 10px ; /* top and bottom and left and right */
+	padding: 0;
+}
+
+nav li
+{
+	display: inline-block; /* block = pushes things out of the way ie: divs; puts nav choices side by side */
+}
+
+nav a
+{
+	font-weight: 800;
+	padding: 15px 10px; /* top bottom; left and right; makes touching the button on a mobile device easier */	
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * 
+FOOTER
+* * * * * * * * * * * * * * * * * * * * * */
+
+footer
+{
+	font-size: 0.75em;
+	text-align: center;
+	clear: both;
+	padding-top: 50px;
+	color: #ccc;
+
+}
+
+.social-icon
+{
+	width: 20px;
+	height: 20px;
+	margin: 0 5px;
+}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * 
+PAGE: EDUCATION
+* * * * * * * * * * * * * * * * * * * * * */
+
+#gallery
+{
+	margin: 0;
+	padding: 0;
+	list-style: none; /* removes list bullet points */
+}
+
+/* gives gallery a two column layout */
+#gallery li
+{
+	float: left;
+	width: 45%; /* image will only take up 45% of the browser window; 100%/45% = 2 images with 10 left for spacing */
+	margin: 2.5%; /* 2.5 times 4 is 10; which is the remaining space */
+	/* background-color: #f5f5f5; medium gray bacground color for image text */
+	color: #bdc3c7 /* this will only show if the image text is unlinked */;
+}
+
+#gallery li a p
+{
+	margin: 0;
+	padding: 5%;
+	font-size: 0.80em;
+	color: #bdc3c7;
+}
+
+#first
+{
+	display: inline-block;
+	text-align: center; 
+	background-color: #f5f5f5;
+	margin: 0 0 20px 0;
+	height: 20%;
+	color:#3D3D3D;
+}
+
+.project-icon
+{
+	height: 12em;
+	width: 12em;	
+	border-radius: 10%;
+	box-shadow: 10px 10px 5px #888888;
+	
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * 
+PAGE: ABOUT
+* * * * * * * * * * * * * * * * * * * * * */
+
+.profile-photo
+{
+	display: block; /* allows us to use auto margins to center the img */
+	max-width: 150px;
+	margin: 0 auto 30px;
+	border-radius: 2%; /* allows us to use rounded corners on the img; 20px will create a square with round edges */
+}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * 
+PAGE: CONNECT
+* * * * * * * * * * * * * * * * * * * * * */
+
+.contact-info
+{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 0.9em; /* slightly smaller than the default */
+}
+
+.contact-info a
+{
+	display: block; /* each image will take up space */
+	min-height: 20px; 
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	padding: 0 0 0 30px; /* moves text to the right */
+	margin: 0 0 10px;
+}
+
+.contact-info li.phone a
+{
+	background-image: url('../img/phone.png'); /* two dots allow us to go up two directories */
+}
+
+.contact-info li.mail a
+{
+	background-image: url('../img/mail.png'); /* two dots allow us to go up two directories */
+}
+
+.contact-info li.twitter a
+{
+	background-image: url('../img/twitter.png'); /* two dots allow us to go up two directories */
+}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * 
+COLORS
+* * * * * * * * * * * * * * * * * * * * * */
+
+/* site body */
+body
+{
+	background-color: #fff;
+	color: #999;
+}
+
+/* green header */
+header
+{
+	background: #7A7A7A	;
+	border-color: #599a68;
+}e
+
+/* nav background on mobile devices */
+nav
+{
+	background: #3D3D3D;
+}
+
+/* logo text */
+h1, h2
+{ 
+	color: #fff;
+}
+
+/* links */
+a
+{
+	color: #7EC0EE;
+}
+
+/* nav link */
+nav a, nav a:visited /* visited pseudo class */
+{
+	color: #fff;
+
+}
+
+/* selected nav link */
+nav a.selected, nav a:hover
+{
+	color: #7EC0EE;
+}
+
+/* use percentages for nested elements; relative units like percentages adjust with screen size */
